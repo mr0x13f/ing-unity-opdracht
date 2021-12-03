@@ -11,15 +11,15 @@ namespace Zoo
         private void Start()
         {
             Lion henk = Instantiate(lion, transform).GetComponent<Lion>();
-            henk.name = "henk";
+            henk.animalName = "henk";
             Hippo elsa = Instantiate(hippo, transform).GetComponent<Hippo>();
-            elsa.name = "elsa";
+            elsa.animalName = "elsa";
             Pig dora = Instantiate(pig, transform).GetComponent<Pig>();
-            dora.name = "dora";
+            dora.animalName = "dora";
             Tiger wally = Instantiate(tiger, transform).GetComponent<Tiger>();
-            wally.name = "wally";
+            wally.animalName = "wally";
             Zebra marty = Instantiate(zebra, transform).GetComponent<Zebra>();
-            marty.name = "marty";            
+            marty.animalName = "marty";            
         }
     }
 }
