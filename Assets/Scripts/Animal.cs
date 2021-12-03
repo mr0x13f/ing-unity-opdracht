@@ -17,7 +17,7 @@ namespace Zoo
 
         protected void ShowBalloonMessage(string message) {
             Balloon.SetActive(true);
-            text.text = "splash";
+            text.text = message;
         }
     }
 }
