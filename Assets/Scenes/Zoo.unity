@@ -938,6 +938,10 @@ MonoBehaviour:
     type: 3}
   zebraPrefab: {fileID: 1072593225874480, guid: ca5452b56f32abc46bc83ba2db5f04fd,
     type: 3}
+  capybaraPrefab: {fileID: 1503268068017508, guid: 8fae1ae69ed57354a994fa65ddbf53a7,
+    type: 3}
+  orangutanPrefab: {fileID: 1503268068017508, guid: cda17f6aa42f1ba40bb4c2db674f5076,
+    type: 3}
 --- !u!1 &1096552935
 GameObject:
   m_ObjectHideFlags: 0
