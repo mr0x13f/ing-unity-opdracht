@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 114526069506724724}
   - component: {fileID: 114014464807404962}
   - component: {fileID: 4029194264036579860}
-  - component: {fileID: 4156675761382803142}
+  - component: {fileID: 1629980383859106879}
   m_Layer: 5
   m_Name: Capybara
   m_TagString: Untagged
@@ -108,8 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalName: 
   speechBalloon: {fileID: 8474357795094769639}
-  trick: {fileID: 4156675761382803142}
---- !u!114 &4156675761382803142
+  trick: {fileID: 1629980383859106879}
+--- !u!114 &1629980383859106879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,10 +118,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1503268068017508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27161b9c48402424ebd6c2675e217649, type: 3}
+  m_Script: {fileID: 11500000, guid: cda350ba0b0ab4148ade829d924a00fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 2
+  image: {fileID: 114526069506724724}
+  sprite: {fileID: 21300000, guid: 9f52eaa91bd920b4194151d37a036e18, type: 3}
 --- !u!1001 &1491731695122777521
 PrefabInstance:
   m_ObjectHideFlags: 0
