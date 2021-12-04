@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27161b9c48402424ebd6c2675e217649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 2
 --- !u!1001 &5072918897767453394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -238,7 +239,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeechBalloon
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6286651331885852261, guid: 9d597e25142d00241ac44b10d4f53a24, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d597e25142d00241ac44b10d4f53a24, type: 3}
 --- !u!224 &1428542315917843183 stripped
 RectTransform:

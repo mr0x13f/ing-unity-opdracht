@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6176004602466273341}
   - component: {fileID: 6178819375484009187}
   - component: {fileID: 6286503465396080139}
-  - component: {fileID: 6286651331885852261}
   - component: {fileID: 7001203586001775190}
   m_Layer: 5
   m_Name: SpeechBalloon
@@ -76,19 +75,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6286651331885852261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6245089254537394697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb2b1f0e3b309444a11532f6830a7cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seconds: 5
 --- !u!114 &7001203586001775190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +88,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 6286905786710306327}
+  duration: 5
 --- !u!1 &6245605181506704967
 GameObject:
   m_ObjectHideFlags: 0

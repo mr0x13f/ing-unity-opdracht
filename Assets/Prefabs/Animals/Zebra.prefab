@@ -224,7 +224,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeechBalloon
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6286651331885852261, guid: 9d597e25142d00241ac44b10d4f53a24, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d597e25142d00241ac44b10d4f53a24, type: 3}
 --- !u!224 &224377173649267246 stripped
 RectTransform:
