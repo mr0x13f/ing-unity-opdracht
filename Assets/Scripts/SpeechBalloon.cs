@@ -28,6 +28,5 @@ namespace Zoo
             yield return new WaitForSeconds(duration);
             gameObject.SetActive(false);
         }
-
     }
 }

@@ -16,5 +16,4 @@ namespace Zoo
             speechBalloon.Say("munch munch lovely");
         }
     }
-    
 }

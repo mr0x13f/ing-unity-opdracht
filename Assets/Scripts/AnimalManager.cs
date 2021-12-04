@@ -71,7 +71,6 @@ namespace Zoo
 
             foreach (Animal animal in animalsWithName)
                     animal.SayHello();
-        }
-        
+        }  
     }
 }
