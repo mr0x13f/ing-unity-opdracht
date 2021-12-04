@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Zoo
 {
-    class Spawner : MonoBehaviour
+    public class Spawner : MonoBehaviour
     {
         [SerializeField]
         private GameObject lionPrefab, hippoPrefab, pigPrefab,
