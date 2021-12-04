@@ -6,6 +6,10 @@ namespace Zoo
 {
     public class SpinTrick : Trick
     {
+        [SerializeField]
+        [Tooltip("Duration of the trick in seconds")]
+        private float duration = 2f;
+
         override public void Perform()
         {
             StartCoroutine(DoTrick());
@@ -13,10 +17,27 @@ namespace Zoo
 
         IEnumerator DoTrick()
         {
-            for (int i = 0; i < 360; i++)
+            float startTime = Time.time;
+
+            while (true)
             {
-                transform.localRotation = Quaternion.Euler(i, 0, 0);
-                yield return new WaitForEndOfFrame();
+                // Find how far we are into the animation as a fraction
+                float currentProgress = (Time.time - startTime) / duration;
+                // Cap it to the duration of the animation
+                // Otherwise we might rotate too far on the last frame
+                currentProgress = Mathf.Min(currentProgress, 1);
+
+                // Find how far we need to rotate
+                float rotation = 360 * currentProgress;
+
+                // Rotate
+                transform.localRotation = Quaternion.Euler(rotation, 0, 0);
+
+                // Keep going if there's still time left in the animation
+                if (currentProgress < 1)
+                    yield return new WaitForEndOfFrame();
+                else
+                    break;
             }
         }
     }
