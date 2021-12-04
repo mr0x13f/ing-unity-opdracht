@@ -9,14 +9,17 @@ namespace Zoo
         [SerializeField]
         [Tooltip("Duration of the trick in seconds")]
         private float duration = 2f;
+        private bool playing = false;
 
         override public void Perform()
         {
-            StartCoroutine(DoTrick());
+            if (!playing)
+                StartCoroutine(DoTrick());
         }
 
         IEnumerator DoTrick()
         {
+            playing = true;
             float startTime = Time.time;
 
             while (true)
@@ -39,6 +42,8 @@ namespace Zoo
                 else
                     break;
             }
+
+            playing = false;
         }
     }
 }
