@@ -6,9 +6,9 @@ namespace Zoo
 {
     public class DeactivateAfterSeconds : MonoBehaviour
     {
-
         [SerializeField]
         private float seconds;
+
         private void OnEnable()
         {
             StartCoroutine(Deactivate());

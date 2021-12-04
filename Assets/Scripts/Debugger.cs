@@ -7,22 +7,22 @@ namespace Zoo
 {
     public class Debugger : MonoBehaviour
     {
-        private static Debugger instance;
-        public static Debugger Instance {
+        private static Debugger _instance;
+        public static Debugger instance {
             get {
-                if (instance != null)
-                    return instance;
+                if (_instance != null)
+                    return _instance;
                 else
                     throw new Exception("No instance of Debugger");
             }
         }
 
         private void Awake() {
-            if (instance != null && instance != this) {
+            if (_instance != null && _instance != this) {
                 Destroy(gameObject);
                 return;
             } else 
-                instance = this;
+                _instance = this;
         }
 
         public void Log(string message)

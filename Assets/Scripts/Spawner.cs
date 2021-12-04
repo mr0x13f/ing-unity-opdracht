@@ -7,18 +7,19 @@ namespace Zoo
     class Spawner : MonoBehaviour
     {
         [SerializeField]
-        private GameObject lion, hippo, pig, tiger, zebra;
+        private GameObject lionPrefab, hippoPrefab, pigPrefab, tigerPrefab, zebraPrefab;
+        
         private void Start()
         {
-            Lion henk = Instantiate(lion, transform).GetComponent<Lion>();
+            Lion henk = Instantiate(lionPrefab, transform).GetComponent<Lion>();
             henk.animalName = "henk";
-            Hippo elsa = Instantiate(hippo, transform).GetComponent<Hippo>();
+            Hippo elsa = Instantiate(hippoPrefab, transform).GetComponent<Hippo>();
             elsa.animalName = "elsa";
-            Pig dora = Instantiate(pig, transform).GetComponent<Pig>();
+            Pig dora = Instantiate(pigPrefab, transform).GetComponent<Pig>();
             dora.animalName = "dora";
-            Tiger wally = Instantiate(tiger, transform).GetComponent<Tiger>();
+            Tiger wally = Instantiate(tigerPrefab, transform).GetComponent<Tiger>();
             wally.animalName = "wally";
-            Zebra marty = Instantiate(zebra, transform).GetComponent<Zebra>();
+            Zebra marty = Instantiate(zebraPrefab, transform).GetComponent<Zebra>();
             marty.animalName = "marty";            
         }
     }
