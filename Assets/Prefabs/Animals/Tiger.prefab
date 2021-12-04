@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 114343553296528356}
   - component: {fileID: 114391943742851536}
   - component: {fileID: 114971796148678666}
+  - component: {fileID: 3463481316907489617}
   m_Layer: 5
   m_Name: Tiger
   m_TagString: Untagged
@@ -107,6 +108,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalName: 
   speechBalloon: {fileID: 2832734811328100484}
+  trick: {fileID: 3463481316907489617}
+--- !u!114 &3463481316907489617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635293449333400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27161b9c48402424ebd6c2675e217649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5072918897767453394
 PrefabInstance:
   m_ObjectHideFlags: 0

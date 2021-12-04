@@ -6,6 +6,9 @@ namespace Zoo
 {
     public class Tiger : Animal, ICarnivore, ITrickPerformer
     {
+        [SerializeField]
+        private Trick trick;
+
         override public void SayHello()
         {
             speechBalloon.Say("rraaarww");
@@ -18,16 +21,7 @@ namespace Zoo
 
         public void PerformTrick()
         {
-            StartCoroutine(DoTrick());
-        }
-
-        IEnumerator DoTrick()
-        {
-            for (int i = 0; i < 360; i++)
-            {
-                transform.localRotation = Quaternion.Euler(i, 0, 0);
-                yield return new WaitForEndOfFrame();
-            }
+            trick.Perform();
         }
     }
 }
