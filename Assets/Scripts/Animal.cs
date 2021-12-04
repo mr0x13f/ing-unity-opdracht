@@ -9,16 +9,8 @@ namespace Zoo
     {
         public string animalName;
         [SerializeField]
-        private GameObject Balloon;
-        [SerializeField]
-        private Text text;
+        protected SpeechBalloon speechBalloon;
 
         abstract public void SayHello();
-
-        protected void ShowBalloonMessage(string message)
-        {
-            Balloon.SetActive(true);
-            text.text = message;
-        }
     }
 }

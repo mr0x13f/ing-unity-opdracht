@@ -8,12 +8,12 @@ namespace Zoo
     {
         override public void SayHello()
         {
-            ShowBalloonMessage("zebra zebra");
+            speechBalloon.Say("zebra zebra");
         }
 
         public void EatLeaves()
         {
-            ShowBalloonMessage("munch munch zank yee bra");
+            speechBalloon.Say("munch munch zank yee bra");
         }
     }
 }
