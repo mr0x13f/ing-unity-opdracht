@@ -8,7 +8,8 @@ namespace Zoo
     public class Debugger : MonoBehaviour
     {
         private static Debugger _instance;
-        public static Debugger instance {
+        public static Debugger instance
+        {
             get {
                 if (_instance != null)
                     return _instance;
@@ -17,8 +18,10 @@ namespace Zoo
             }
         }
 
-        private void Awake() {
-            if (_instance != null && _instance != this) {
+        private void Awake()
+        {
+            if (_instance != null && _instance != this)
+            {
                 Destroy(gameObject);
                 return;
             } else 

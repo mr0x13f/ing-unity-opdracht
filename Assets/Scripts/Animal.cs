@@ -15,7 +15,8 @@ namespace Zoo
 
         abstract public void SayHello();
 
-        protected void ShowBalloonMessage(string message) {
+        protected void ShowBalloonMessage(string message)
+        {
             Balloon.SetActive(true);
             text.text = message;
         }
