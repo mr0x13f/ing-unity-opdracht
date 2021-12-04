@@ -25,7 +25,7 @@ namespace Zoo
                 StartCoroutine(DoTrick());
         }
 
-        IEnumerator DoTrick()
+        private IEnumerator DoTrick()
         {
             playing = true;
             Sprite originalSprite = image.sprite;
