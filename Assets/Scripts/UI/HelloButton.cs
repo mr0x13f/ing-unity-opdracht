@@ -12,13 +12,13 @@ namespace Zoo
         private InputField nameInputField;
         private Button button;
 
-        void Start()
+        private void Start()
         {
             button = GetComponent<Button>();
             button.onClick.AddListener(OnClick);
         }
 
-        void OnClick()
+        private void OnClick()
         {
             if (nameInputField.text == "")
                 AnimalManager.instance.SayHalloToAll();
